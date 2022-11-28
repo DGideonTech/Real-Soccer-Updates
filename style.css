@@ -162,61 +162,6 @@ object-fit: cover;
 
 /**************************** home page Responsiveness 1*************/
 
-@media screen and (max-width:768px){
-    .nav .link ul{
-    display: block;
-       /* margin-right: -30px;*/
-       border: .5px solid orangered;
-        padding: 10px;
-        border-left: 0;
-        border-top: 0;
-        z-index: 2;
-        position: relative;
-        top: 50px;
-        left: 200px;
-        box-shadow: 10px 8px 15px 0px orangered;
-        margin-right: -20px;
-        transition: 1s;
-    }
-    .shown.link ul{
-        left: 0;
-}
-    .nav .link ul li{
-        padding-bottom: 20px;
-        
-    }
-    
-    .menu{
-        position: relative;
-        left: 60px;
-        top: -3px;
-        font-size: 30px;
-        display: block;
-    }   
-    .menu .fa:hover{
-        animation: bar 1s linear;
-        color: orangered;
-        /*transition: 1s;*/
-    }
-    @keyframes bar{
-        100%{
-            transform: rotate(90deg);
-        }
-    }
-    .nav .logo{
-    font-size: 20px;
-}
-    
-    .main-container h1{
-    top: 30%;
-       font-size: 30px;
-}
-    .ball{
-    position: absolute;
-    left:0px;
-    top: 480px;
-}
-}
 
 
 /***********************************search page***************/
@@ -279,14 +224,14 @@ display: block;
     color: white;
 }
 .input{
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     
 }
 #enter{
     padding: 10px;
-    width: 50px;
+    width: 150px;
     display: block;
      box-shadow: 0 0 10px 1px black;
     background: transparent;
@@ -402,9 +347,88 @@ line-height: 25px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /***********************responsiveness for mobile**********/
 
-@media screen and (max-width:768px){
+/********************For other andriods********************/
+@media screen and (max-width:480px){
+    
+  /* .ball{
+    position: absolute;
+    left: 165px;
+    top: 900px;
+    box-shadow: 0px 10px 0px black;
+    z-index: 2;
+}*/
+    .main-container h1 span{
+    animation: bounce 2s ease-in-out infinite;
+    display: inline-block;
+}
+  .nav .link ul{
+    display: block;
+       /* margin-right: -30px;*/
+       border: .5px solid orangered;
+        padding: 10px;
+        border-left: 0;
+        border-top: 0;
+        z-index: 2;
+        position: relative;
+        top: 50px;
+        left: 200px;
+        box-shadow: 10px 8px 15px 0px orangered;
+        margin-right: -20px;
+        transition: 1s;
+    }
+    .shown.link ul{
+        left: 0;
+}
+    .nav .link ul li{
+        padding-bottom: 20px;
+        
+    }
+    
+    .menu{
+        position: relative;
+        left: 60px;
+        top: -3px;
+        font-size: 30px;
+        display: block;
+    }   
+    .menu .fa:hover{
+        animation: bar 1s linear;
+        color: orangered;
+        /*transition: 1s;*/
+    }
+    @keyframes bar{
+        100%{
+            transform: rotate(90deg);
+        }
+    }
+    .nav .logo{
+    font-size: 20px;
+}
+    
+    .main-container h1{
+    top: 30%;
+       font-size: 40px;
+}
+    .ball{
+    position: absolute;
+    left:165px;
+    top: 630px;
+}
+
     .matches-row{
     width: 100%;
     padding-bottom:  500px;
@@ -430,7 +454,7 @@ line-height: 25px;
     #col-1{
     background-color: black;
     width: 80%;
-    box-shadow: 0 0 10px 5px black;
+    box-shadow: 0 0 5px 1px black;
     border: none;
     border-radius: 20px;
      height: 20vh;
@@ -455,7 +479,7 @@ display: block;
 }
 #enter{
     padding: 10px;
-    width: 50px;
+    width: 120px;
     display: block;
     /* box-shadow: 0 0 6px 1px black;*/
     background: transparent;
@@ -477,8 +501,226 @@ display: block;
     width:  100%;
      height: 100%;
     object-fit: cover;
-     box-shadow:  0 0 20px 5px black;
+     box-shadow:  0 0 10px 3px black;
+}  
+     .about-us{
+        display: block;
+        margin: 0px 16px;
+        justify-content: center;
+        width: 80%;
+        position: relative;
+        top: 30px;
+         text-align: center;
 }
+    .about-us h1{
+font-size: 40px;
+    }
+    .about-col{
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .footer{
+background: transparent;
+    text-align: center;
+    line-height: 30px;
+        position: relative;
+        top:230px;
+}
+    .main-container2{
+      /* background-image: url(photo-1502481686408-d428268c24ff.jpeg);*/
+        width: 100%;
+        height: 105vh;
+     object-fit: cover;
+     background-size: cover;
+     overflow: hidden;
+     z-index: -10;
+   padding-top: 30px;
+    }  
+    
+    .footer .icons span .fa-brands{
+    border: 1px solid white;
+   /* background: orangered;*/
+    border-radius: 50px;
+    padding: 5px;
+    transition: .5s;
+    margin: 10px 0;
+}
+.footer .icons span .fa-brands:hover{
+    background: orangered;
+    
+}
+.fa-solid{
+    border: 1px solid white;
+}
+.fa-solid:hover{
+    background-color: orangered;
+}
+    #ball{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+   /*border-bottom: 1px solid white;*/
+    animation: spin 1s linear infinite;
+}
+    .matches-col img{
+    width: 100%;
+    box-shadow: 0 0 10px 4px black;
+     border-radius: 10px;
+    object-fit: cover;
+    height: 80%;
+}
+.about-us video{
+    width: 100%;
+    box-shadow: 0 0 10px 2px black;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: black;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/************************For Iphones*********************/
+    @media screen and (max-width:375px){
+        
+   
+    .nav .link ul{
+    display: block;
+       /* margin-right: -30px;*/
+       border: .5px solid orangered;
+        padding: 10px;
+        border-left: 0;
+        border-top: 0;
+        z-index: 2;
+        position: relative;
+        top: 50px;
+        left: 200px;
+        box-shadow: 10px 8px 15px 0px orangered;
+        margin-right: -20px;
+        transition: 1s;
+    }
+    .shown.link ul{
+        left: 0;
+}
+    .nav .link ul li{
+        padding-bottom: 20px;
+        
+    }
+    
+    .menu{
+        position: relative;
+        left: 60px;
+        top: -3px;
+        font-size: 30px;
+        display: block;
+    }   
+    .menu .fa:hover{
+        animation: bar 1s linear;
+        color: orangered;
+        /*transition: 1s;*/
+    }
+    @keyframes bar{
+        100%{
+            transform: rotate(90deg);
+        }
+    }
+    .nav .logo{
+    font-size: 20px;
+}
+    
+    .main-container h1{
+    top: 30%;
+       font-size: 30px;
+}
+    .ball{
+    position: absolute;
+    left:0px;
+    top: 480px;
+}
+
+    .matches-row{
+    width: 100%;
+    padding-bottom:  500px;
+    padding: 0px 10px;
+    margin: auto;
+     display: block;
+    justify-content: space-between;
+}
+    #up{
+line-height: 25px;
+    font-size: 13px;
+        font-weight: 100;
+    text-justify: inter-character;
+    text-transform: full-width;
+    text-align: left;
+}
+
+.matches-col{
+   flex-basis: 51%;
+    justify-content: space-between;
+    margin: 40px 30px;
+}
+    #col-1{
+    background-color: black;
+    width: 80%;
+    box-shadow: 0 0 5px 1px black;
+    border: none;
+    border-radius: 20px;
+     height: 20vh;
+        margin: auto;
+}
+    .matches-col .search{
+    margin-left: 20px;
+    padding: 0px;
+    border: .5px solid white;
+    background-color: transparent;
+    width: 100%;
+display: block;
+     box-shadow: 0 0 20px 7px black;
+    cursor: default;
+    outline: none;
+}
+    .input{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#enter{
+    padding: 10px;
+    width: 80px;
+    display: block;
+    /* box-shadow: 0 0 6px 1px black;*/
+    background: transparent;
+    margin: 0 10px;
+}
+    .images{
+    margin:0px auto;
+    display: grid;
+    width: 90%;
+    justify-content: space-between;
+    /*width: min(94.5%, 75rem);*/
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    padding: 50px 0;
+    justify-content: center;
+   /* background-color: black;*/
+}
+.img-col img{
+    width:  100%;
+     height: 100%;
+    object-fit: cover;
+     box-shadow:  0 0 10px 3px black;
+}
+       
    /* hr{
     width: 80%;
     margin: auto;
@@ -523,7 +765,7 @@ background: transparent;
     text-align: center;
     line-height: 30px;
         position: relative;
-        top:100px;
+        top:80px;
 }
     .main-container2{
       /* background-image: url(photo-1502481686408-d428268c24ff.jpeg);*/
@@ -568,16 +810,40 @@ background: transparent;
    /*border-bottom: 1px solid white;*/
     animation: spin 1s linear infinite;
 }
+         .matches-col img{
+    width: 100%;
+    box-shadow: 0 0 10px 3px black;
+     border-radius: 10px;
+    object-fit: cover;
+    height: 80%;
 }
+.about-us video{
+    width: 100%;
+    box-shadow: 0 0 10px 2px black;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: black;
+}    
+          }
+    }
 
 
 
+/***********************for lower mobile device**********/
 
 
-
-
-
-
+/*
+@media screen and (min-width: 480px & ){
+    .ball{
+    position: absolute;
+    left: 140px;
+    top: 200px;
+    box-shadow: 0px 10px 0px black;
+    z-index: 2;
+}
+}
+}
+*/
 
 
 
