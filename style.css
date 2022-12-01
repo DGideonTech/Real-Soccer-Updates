@@ -371,6 +371,13 @@ line-height: 25px;
     box-shadow: 0px 10px 0px black;
     z-index: 2;
 }*/
+    .matches-col h2{
+color: whitesmoke;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-family: serif;
+}
     .main-container h1 span{
     animation: bounce 2s ease-in-out infinite;
     display: inline-block;
